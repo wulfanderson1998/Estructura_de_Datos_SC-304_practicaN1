@@ -215,11 +215,9 @@ public class Menu {
         contador = vehiculo.conteoVocalesConsonantes(vehiculo.getPlaca(), contador);
         JOptionPane.showMessageDialog(
                 null,
-                "La placa tiene "
-                +contador[vocales]
-                +" vocales y "
-                +contador[consonantes]
-                +" consonantes");
+                "La placa tiene: \n"
+                +"Vocales: "+contador[vocales]+"\n"
+                +"Consonantes: "+contador[consonantes]);
     }
     public void ejecutarAccionBoton(JButton nombreBoton, Runnable accion){
         //Ejecuta un método particular al pulsar un botón.
